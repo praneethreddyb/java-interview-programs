@@ -6,8 +6,7 @@ import java.util.Stack;
 
 public class MissingClosingIndex {
     public static void main(String[] args) {
-        //String input = "([]){}([{})";
-        String input = "([{})";
+        String input = "([]){}([{})";
         List<Integer> missingIndex = new ArrayList<Integer>();
         Stack<Integer> stack = new Stack<Integer>();
         for (int i = 0; i < input.length(); i++) {

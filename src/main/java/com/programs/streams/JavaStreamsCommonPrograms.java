@@ -139,5 +139,12 @@ public class JavaStreamsCommonPrograms {
                 .orElse(null);
         System.out.println("Student with second rank: " + secondRankStudent);
 
+        // 8. Find the student with the second highest age
+        Student secondHighestAgeStudent = studentList.stream()
+                .sorted(Comparator.comparingInt(Student::getAge).reversed())
+                .skip(1)
+                .findFirst()
+                .orElse(null);
+
     }
 }
